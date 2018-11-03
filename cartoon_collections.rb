@@ -8,7 +8,13 @@ end
 
 def summon_captain_planet (arg)# code an argument here
   # Your code here
- final =
+ final = []
+ arg.each do |item|
+   first = item[0].upcase
+   item = first + item[1..-1] + "!"
+   final << item
+ end
+ final 
 end
 
 def long_planeteer_calls# code an argument here
